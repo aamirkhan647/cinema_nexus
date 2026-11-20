@@ -7,9 +7,9 @@ Stateful tool operations for managing personal user watchlists.
 from google.adk.tools import ToolContext
 
 try:
-    from ..models import WatchlistAction, WatchlistResult
+    from ..schemas import WatchlistAction, WatchlistResult
 except (ImportError, ValueError):
-    from models import WatchlistAction, WatchlistResult
+    from schemas import WatchlistAction, WatchlistResult
 
 WATCHLIST_STATE_KEY = "user_watchlist"
 

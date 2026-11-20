@@ -54,8 +54,8 @@ cinema_nexus/
 │   ├── director.py           # CinemaNexusDirector: root orchestrator
 │   ├── recommender.py        # RecommenderAgent: state-aware discovery
 │   └── watchlist.py          # WatchlistAgent: watchlist curation
-├── models/                   # Structured data models & schemas
-│   ├── __init__.py           # Exports models and enums
+├── schemas/                  # Structured data models & schemas
+│   ├── __init__.py           # Exports schemas and enums
 │   ├── actions.py            # WatchlistAction enum
 │   └── payloads.py           # WatchlistResult, GuardrailResult schemas
 ├── safety/                   # Multi-layered security & validation

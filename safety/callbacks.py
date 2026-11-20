@@ -17,9 +17,9 @@ from google.adk.tools.tool_context import ToolContext
 from google.genai import types
 
 try:
-    from ..models import GuardrailResult
+    from ..schemas import GuardrailResult
 except (ImportError, ValueError):
-    from models import GuardrailResult
+    from schemas import GuardrailResult
 
 from .filters import (
     INJECTION_PATTERNS,
