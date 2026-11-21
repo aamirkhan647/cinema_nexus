@@ -1,6 +1,6 @@
-# cinema_nexus
+# CinemaNexus
 
-**cinema_nexus** is an enterprise-grade multi-agent movie intelligence system built with the **Google Agent Development Kit (ADK)** and the **Google GenAI SDK** powered by `gemini-3-flash-preview`. It coordinates specialized sub-agents to deliver live film reviews, context-aware recommendations, and personal watchlist curation, secured by multi-layered guardrails.
+**CinemaNexus** is an enterprise-grade multi-agent movie intelligence system built with the **Google Agent Development Kit (ADK)** and the **Google GenAI SDK** powered by `gemini-3-flash-preview`. It coordinates specialized sub-agents to deliver live film reviews, context-aware recommendations, and personal watchlist curation, secured by multi-layered guardrails.
 
 ---
 
@@ -36,7 +36,7 @@
 
 ## Defense-in-Depth Safety Guardrails
 
-cinema_nexus implements three independent layers of security and validation:
+CinemaNexus implements three independent layers of security and validation:
 
 1. **Input Guardrail (`before_model_callback`)**: Intercepts requests before LLM inference to block prompt injection, jailbreak attempts, or unauthorized instruction overrides.
 2. **Output Guardrail (`after_model_callback`)**: Inspects model responses before returning them to the user, redacting Personally Identifiable Information (PII) including emails, phone numbers, and Social Security Numbers.
@@ -107,7 +107,7 @@ cinema_nexus/
 
 2. **Navigate to the project directory:**
    ```cmd
-   cd critics_cut
+   cd cinema_nexus
    ```
 
 3. **Create and activate a virtual environment:**
@@ -189,13 +189,13 @@ http://127.0.0.1:8000
 Once running, try prompts that route to different sub-agents:
 
 - **CriticAgent**:
-  - *"Review Dune: Part Two"*
-  - *"What's the Rotten Tomatoes rating and critical consensus for Oppenheimer?"*
+  - *"Review Inception"*
+  - *"What's the Rotten Tomatoes rating and critical consensus for Arrival?"*
 - **RecommenderAgent**:
-  - *"What should I watch next if I like Blade Runner 2049?"*
+  - *"What should I watch next if I like Life of Pi?"*
   - *"Compare Interstellar vs Arrival and recommend which one to watch tonight."*
 - **WatchlistAgent**:
-  - *"Add Everything Everywhere All at Once to my watchlist"*
+  - *"Add Encanto to my watchlist"*
   - *"Show my current watchlist"*
   - *"Remove Inception from my watchlist"*
 
